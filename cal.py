@@ -1,22 +1,43 @@
+"""
+:file: cal.py
+:brief: For calculating some values used by application
+:version: 1.0
+:author: SWfeiyu
+:date: 2024.1.31
+"""
+
 import random
 import time
 from typing import Dict
 
-
+"""
+:name: CalAcademicYear
+:brief: According to current month to calculate the academic year
+:return: AcademicYear -> int
+"""
 def CalAcademicYear() -> int:
     if 8 < time.localtime(time.time()).tm_mon <= 12:
         return time.localtime(time.time()).tm_year
     else:
         return time.localtime(time.time()).tm_year - 1
 
-
+"""
+:name: CalSemester
+:brief: According to current month to calculate the semester
+:return: Semester -> int
+"""
 def CalsSemester() -> int:
     if 2 <= time.localtime(time.time()).tm_mon <= 7:
         return 2
     else:
         return 1
 
-
+"""
+:name: CalStartTime
+:brief: According to the flag to calculte the start time
+:param: flag -> int
+:return: StartTime -> Dict ={"year","mon","day","hour","min","sec"}
+"""
 def CalStartTime(flag: int) -> Dict:
     StartTime = {}
     if flag == 0 or flag == 6 or flag == 8:
@@ -86,7 +107,12 @@ def CalStartTime(flag: int) -> Dict:
 
     return StartTime
 
-
+"""
+:name: CalEndTime
+:brief: According to the flag to calculte the end time
+:param: flag -> int
+:return: EndTime -> Dict ={"year","mon","day","hour","min","sec"}
+"""
 def CalEndTime(flag: int) -> Dict:
     EndTime = {}
     if flag == 0:
@@ -164,7 +190,12 @@ def CalEndTime(flag: int) -> Dict:
 
     return EndTime
 
-
+"""
+:name: CalCreationTime
+:brief: According to the flag to calculte the creation time
+:param: flag -> int
+:return: CreationTime -> Dict ={"year","mon","day","hour","min","sec"}
+"""
 def CalCreationTime(flag: int) -> Dict:
     CreationTime = {}
     if flag == 0 or flag == 6 or flag == 8:
@@ -219,7 +250,12 @@ def CalCreationTime(flag: int) -> Dict:
 
     return CreationTime
 
-
+"""
+:name: CalClosingTime
+:brief: According to the flag to calculte the closing time
+:param: flag -> int
+:return: ClosingTime -> Dict ={"year","mon","day","hour","min","sec"}
+"""
 def CalClosingTime(flag: int) -> Dict:
     ClosingTime = {}
     if flag == 0 or flag == 6 or flag == 8:
