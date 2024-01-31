@@ -1,6 +1,6 @@
 # NUC-AFLtool
 ## Who am I
-This is a tool for student of North University of China to make applications for leave quickly.
+This is a tool for student of North University of China to make pictures of applications for leave quickly.
 ## Install
 1. Install dependencies.This tool depend on pillow libraray.So we need install it first.
 ```
