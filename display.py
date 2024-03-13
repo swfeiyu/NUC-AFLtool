@@ -6,7 +6,7 @@ def Display() -> Dict:
     print("****NUC-AFLtool*****")
     InputValue["Name"] = input("Please enter your name:")
     InputValue["StudentID"] = int(input("Please enter your student ID:"))
-    InputValue["Class"] = (input("Please enter your class ID:"))
+    InputValue["Class"] = input("Please enter your class ID:")
     InputValue["Gender"] = input("Please enter your gender:(m/w)")
 
     print("******************************")
