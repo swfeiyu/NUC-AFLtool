@@ -5,7 +5,7 @@ from PIL import Image, ImageDraw, ImageFont
 def Draw(ValueStr: Dict):
     ZhLFont = ImageFont.truetype("font/regular.ttf", 50)
     ZhSFont = ImageFont.truetype("font/regular.ttf", 40)
-    im = Image.open("img/test.jpg")
+    im = Image.open("img/base.jpg")
     imd = ImageDraw.Draw(im)
 
     imd.text((92, 789), ValueStr["Name"], font=ZhLFont, fill=(17, 17, 17))
@@ -25,3 +25,4 @@ def Draw(ValueStr: Dict):
 
     im.save("output/note.jpg")
     print("Please view your application in the output folder.Thank you for using!")
+

@@ -4,9 +4,9 @@ from typing import Dict
 def BuildStr(Value: Dict) -> Dict:
     ValueStr = {
         "Name": Value["Name"],
-        "StudentID": str(Value["StudentID"]),
+        "StudentID": Value["StudentID"],
         "AcademicYear": "学年：" + str(Value["AcademicYear"]) + "-" + str(Value["AcademicYear"] + 1),
-        "Class": "班级：" + str(Value["Class"]),
+        "Class": "班级：" + Value["Class"],
         "Type": "请假类型：因私-病假",
         "Days": "请假天数：" + str(Value["Days"]),
         "Apply": "是否补假申请：是",
@@ -62,3 +62,4 @@ def BuildStr(Value: Dict) -> Dict:
     )
 
     return ValueStr
+

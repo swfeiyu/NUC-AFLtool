@@ -5,8 +5,8 @@ def Display() -> Dict:
     InputValue = {}
     print("****NUC-AFLtool*****")
     InputValue["Name"] = input("Please enter your name:")
-    InputValue["StudentID"] = int(input("Please enter your student ID:"))
-    InputValue["Class"] = int(input("Please enter your class ID:"))
+    InputValue["StudentID"] = input("Please enter your student ID:")
+    InputValue["Class"] = input("Please enter your class ID:")
     InputValue["Gender"] = input("Please enter your gender:(m/w)")
 
     print("******************************")
@@ -81,3 +81,4 @@ def GetValue() -> Dict:
     Value["Days"] = CalDays(InputValue["Flag"], Value)
 
     return Value
+

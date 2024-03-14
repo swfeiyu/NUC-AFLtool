@@ -336,3 +336,4 @@ def CalDays(flag: int, Value: Dict) -> float:
         sec: float = year_sec + mon_sec + day_sec + hour_sec + min_sec + sec_sec
         DayValue: float = round(sec / 60 / 60 / 24, 2)
         return DayValue
+
