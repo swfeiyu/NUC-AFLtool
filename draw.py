@@ -1,7 +1,35 @@
+"""
+:file: draw.py
+:brief: To draw the strings in the base.jpg and get the photos
+:version: 1.1
+:author: SWfeiyu
+:date: 2024.3.27
+"""
+
 from typing import Dict
 from PIL import Image, ImageDraw, ImageFont
 
-
+"""
+:name: Draw
+:brief: To draw the strings in the base.jpg and save the photos into the
+output folder
+:param: ValueStr -> Dict ={
+                              "Name",
+                              "StudentID",
+                              "AcademicYear",
+                              "Semester",
+                              "Class",
+                              "Gender",
+                              "Type",
+                              "Days",
+                              "Apply",
+                              "StartTime",
+                              "EndTime",
+                              "CreationTime",
+                              "ClosingTime",
+                              "State"
+                          }
+"""
 def Draw(ValueStr: Dict):
     ZhLFont = ImageFont.truetype("font/regular.ttf", 50)
     ZhSFont = ImageFont.truetype("font/regular.ttf", 40)

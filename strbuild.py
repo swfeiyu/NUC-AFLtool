@@ -1,6 +1,46 @@
+"""
+:file: strbuild.py
+:brief: To build the strings which need to draw
+:version: 1.1
+:author: SWfeiyu
+:date: 2024.3.27
+"""
+
 from typing import Dict
 
-
+"""
+:name: BuildStr
+:brief: To build the strings which need to draw
+:param: Value -> Dict ={
+                           "Name",
+                           "StudentID",
+                           "Class",
+                           "Gender",
+                           "AcademicYear",
+                           "Semester",
+                           "Days",
+                           "StartTime":{"year","mon","day","hour","min","sec"},
+                           "EndTime":{"year","mon","day","hour","min","sec"},
+                           "CreationTime":{"year","mon","day","hour","min","sec"},
+                           "ClosingTime":{"year","mon","day","hour","min","sec"},
+                       }
+:return: ValueStr -> Dict ={
+                               "Name",
+                               "StudentID",
+                               "AcademicYear",
+                               "Semester",
+                               "Class",
+                               "Gender",
+                               "Type",
+                               "Days",
+                               "Apply",
+                               "StartTime",
+                               "EndTime",
+                               "CreationTime",
+                               "ClosingTime",
+                               "State"
+                           }
+"""
 def BuildStr(Value: Dict) -> Dict:
     ValueStr = {
         "Name": Value["Name"],

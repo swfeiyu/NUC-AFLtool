@@ -1,9 +1,9 @@
 """
 :file: cal.py
 :brief: For calculating some values used by application
-:version: 1.0
+:version: 1.1
 :author: SWfeiyu
-:date: 2024.1.31
+:date: 2024.3.27
 """
 
 import random
@@ -310,7 +310,24 @@ def CalClosingTime(flag: int) -> Dict:
 
     return ClosingTime
 
-
+"""
+:name: CalDays
+:brief: According to the flag and time dicts to calculte the total length of leave
+:param0: flag -> int
+:param1: Value -> Dict ={
+                            "Name",
+                            "StudentID",
+                            "Class",
+                            "Gender",
+                            "AcademicYear",
+                            "Semester",
+                            "StartTime":{"year","mon","day","hour","min","sec"},
+                            "EndTime":{"year","mon","day","hour","min","sec"},
+                            "CreationTime":{"year","mon","day","hour","min","sec"},
+                            "ClosingTime":{"year","mon","day","hour","min","sec"},
+                        }
+:return: DayValue -> float
+"""
 def CalDays(flag: int, Value: Dict) -> float:
     if flag == 0:
         return 0.03

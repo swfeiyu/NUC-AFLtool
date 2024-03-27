@@ -1,6 +1,18 @@
+"""
+:file: display.py
+:brief: For displaying and getting values in the terminal
+:version: 1.1
+:author: SWfeiyu
+:date: 2024.3.27
+"""
+
 from cal import *
 
-
+"""
+:name: Display
+:brief: To display and get the name, studentID, classID, gender and the flag
+:return: InputValue -> Dict ={"Name","StudentID","Class","Gender","flag"}
+"""
 def Display() -> Dict:
     InputValue = {}
     print("****NUC-AFLtool*****")
@@ -26,7 +38,23 @@ def Display() -> Dict:
 
     return InputValue
 
-
+"""
+:name: GetValue
+:brief: To get all values from cal.py or input
+:return: Value -> Dict ={
+                            "Name",
+                            "StudentID",
+                            "Class",
+                            "Gender",
+                            "AcademicYear",
+                            "Semester",
+                            "Days",
+                            "StartTime":{"year","mon","day","hour","min","sec"},
+                            "EndTime":{"year","mon","day","hour","min","sec"},
+                            "CreationTime":{"year","mon","day","hour","min","sec"},
+                            "ClosingTime":{"year","mon","day","hour","min","sec"},
+                        }
+"""
 def GetValue() -> Dict:
     InputValue = Display()
     Value = {
