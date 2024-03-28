@@ -33,6 +33,8 @@ run .exe
 
 **Remember,if you wanna create exe on linux ,use wine. Docker is a good idea . I use batonogov/pyinstaller-windows:latest**
 
+command like `docker run -it -v VOLUME:/src  batonogov/pyinstaller-windows:latest /bin/bash`
+
 ## Postscript
 If you find some bugs or have some new suggestions, you can submit in the issue.
 If this project is helpful to you, please click Star in the upper right corner of the page to support, thank you!
