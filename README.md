@@ -2,7 +2,7 @@
 ## Who am I
 This is a tool for students of North University of China to make pictures of applications for leave quickly.
 
-## Use
+## Use as a python script
 1. Install dependencies.This tool depend on pillow libraray. So we need install it first.
 ```
 pip install pillow
@@ -17,6 +17,21 @@ cd NUC-AFLtool
 python main.py
 ```
 Answer questions as requested. You can see what you need in the output folder.
+
+## Use like a program
+### Linux
+```
+./main
+```
+### Windows
+```
+run .exe
+```
+## how to pack
+1. `pip install pyinstaller`
+2.  `bash pack.sh`
+
+**Remember,if you wanna create exe on linux ,use wine. Docker is a good idea . I use batonogov/pyinstaller-windows:latest**
 
 ## Postscript
 If you find some bugs or have some new suggestions, you can submit in the issue.
