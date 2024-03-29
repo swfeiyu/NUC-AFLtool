@@ -3,6 +3,7 @@
 This is a tool for students of North University of China to make pictures of applications for leave quickly.
 
 ## Use
+### Use as a python script
 1. Install dependencies.This tool depend on pillow libraray. So we need install it first.
 ```
 pip install pillow
@@ -17,6 +18,25 @@ cd NUC-AFLtool
 python main.py
 ```
 Answer questions as requested. You can see what you need in the output folder.
+### Use like a program
+#### How to pack
+We have written the script to pack using pyinstaller. Command like
+```
+pip install pyinstaller
+bash pack.sh
+```
+Then you can see an executable file named AFLtool in this folder.You can
+use it in the terminal.
+#### Linux
+```
+./AFLtool
+```
+**Remember, if you wanna create exe on linux, use wine. Docker is a good idea. I use batonogov/pyinstaller-windows:latest**
+Command like`docker run -it -v VOLUME:/src batonogov/pyinstaller-windows:latest /bin/bash`
+#### Windows
+```
+run AFLtool.exe
+```
 
 ## Postscript
 If you find some bugs or have some new suggestions, you can submit in the issue.
