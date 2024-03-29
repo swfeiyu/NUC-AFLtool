@@ -91,7 +91,7 @@ def BuildStr(Value: Dict) -> Dict:
         )
     )
     ValueStr["ClosingTime"] = (
-        "创建时间：{0}-{1}-{2} {3}:{4}:{5}".format(
+        "办结时间：{0}-{1}-{2} {3}:{4}:{5}".format(
             str(Value["ClosingTime"]["year"]),
             str(Value["ClosingTime"]["mon"]).rjust(2, '0'),
             str(Value["ClosingTime"]["day"]).rjust(2, '0'),
