@@ -36,8 +36,8 @@ def Draw(ValueStr: Dict):
     im = Image.open("img/base.jpg")
     imd = ImageDraw.Draw(im)
 
-    imd.text((92, 789), ValueStr["Name"], font=ZhLFont, fill=(17, 17, 17))
-    imd.text((92 + 50 * len(ValueStr["Name"]) + 46, 801), ValueStr["StudentID"], font=ZhSFont, fill=(102, 102, 102))
+    imd.text((92, 769), ValueStr["Name"], font=ZhLFont, fill=(17, 17, 17))
+    imd.text((92 + 50 * len(ValueStr["Name"]) + 46, 776), ValueStr["StudentID"], font=ZhSFont, fill=(102, 102, 102))
     imd.text((90, 900), ValueStr["AcademicYear"], font=ZhSFont, fill=(102, 102, 102))
     imd.text((90, 960), ValueStr["Semester"], font=ZhSFont, fill=(102, 102, 102))
     imd.text((90, 1020), ValueStr["Class"], font=ZhSFont, fill=(102, 102, 102))
