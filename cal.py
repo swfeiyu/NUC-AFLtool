@@ -65,7 +65,7 @@ def CalStartTime(flag: int) -> Dict:
         StartTime["year"] = time.localtime(time.time()).tm_year
         StartTime["mon"] = time.localtime(time.time()).tm_mon
         StartTime["day"] = time.localtime(time.time()).tm_mday
-        if 5 <= StartTime["mon"] < 10:
+        if StartTime["mon"] < 5 or StartTime["mon"] >= 10:
             StartTime["hour"] = 14
             StartTime["min"] = 0
             StartTime["sec"] = 0
@@ -77,7 +77,7 @@ def CalStartTime(flag: int) -> Dict:
         StartTime["year"] = time.localtime(time.time()).tm_year
         StartTime["mon"] = time.localtime(time.time()).tm_mon
         StartTime["day"] = time.localtime(time.time()).tm_mday
-        if 5 <= StartTime["mon"] < 10:
+        if StartTime["mon"] < 5 or StartTime["mon"] >= 10:
             StartTime["hour"] = 16
             StartTime["min"] = 10
             StartTime["sec"] = 0
@@ -89,7 +89,7 @@ def CalStartTime(flag: int) -> Dict:
         StartTime["year"] = time.localtime(time.time()).tm_year
         StartTime["mon"] = time.localtime(time.time()).tm_mon
         StartTime["day"] = time.localtime(time.time()).tm_mday
-        if 5 <= StartTime["mon"] < 10:
+        if StartTime["mon"] < 5 or StartTime["mon"] >= 10:
             StartTime["hour"] = 19
             StartTime["min"] = 0
             StartTime["sec"] = 0
@@ -140,7 +140,7 @@ def CalEndTime(flag: int) -> Dict:
         EndTime["year"] = time.localtime(time.time()).tm_year
         EndTime["mon"] = time.localtime(time.time()).tm_mon
         EndTime["day"] = time.localtime(time.time()).tm_mday
-        if 5 <= EndTime["mon"] < 10:
+        if EndTime["mon"] < 5 or EndTime["mon"] >= 10:
             EndTime["hour"] = 15
             EndTime["min"] = 40
             EndTime["sec"] = 0
@@ -152,7 +152,7 @@ def CalEndTime(flag: int) -> Dict:
         EndTime["year"] = time.localtime(time.time()).tm_year
         EndTime["mon"] = time.localtime(time.time()).tm_mon
         EndTime["day"] = time.localtime(time.time()).tm_mday
-        if 5 <= EndTime["mon"] < 10:
+        if EndTime["mon"] < 5 or EndTime["mon"] >= 10:
             EndTime["hour"] = 17
             EndTime["min"] = 50
             EndTime["sec"] = 0
@@ -164,7 +164,7 @@ def CalEndTime(flag: int) -> Dict:
         EndTime["year"] = time.localtime(time.time()).tm_year
         EndTime["mon"] = time.localtime(time.time()).tm_mon
         EndTime["day"] = time.localtime(time.time()).tm_mday
-        if 5 <= EndTime["mon"] < 10:
+        if EndTime["mon"] < 5 or EndTime["mon"] >= 10:
             EndTime["hour"] = 21
             EndTime["min"] = 35
             EndTime["sec"] = 0
@@ -179,7 +179,7 @@ def CalEndTime(flag: int) -> Dict:
             time.time() - time.localtime(time.time()).tm_wday * 24 * 60 * 60 + 4 * 24 * 60 * 60).tm_mon
         EndTime["day"] = time.localtime(
             time.time() - time.localtime(time.time()).tm_wday * 24 * 60 * 60 + 4 * 24 * 60 * 60).tm_mday
-        if 5 <= EndTime["mon"] < 10:
+        if EndTime["mon"] < 5 or EndTime["mon"] >= 10:
             EndTime["hour"] = 21
             EndTime["min"] = 35
             EndTime["sec"] = 0
