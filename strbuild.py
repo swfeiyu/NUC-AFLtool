@@ -56,9 +56,9 @@ def BuildStr(Value: Dict) -> Dict:
         ValueStr["Semester"] = "学期：第一学期"
     elif Value["Semester"] == 2:
         ValueStr["Semester"] = "学期：第二学期"
-    if Value["Gender"] == 'm':
+    if Value["Gender"] == 'm' or Value["Gender"] == "男":
         ValueStr["Gender"] = "性别：男性"
-    elif Value["Gender"] == 'w':
+    elif Value["Gender"] == 'w' or Value["Gender"] == "女":
         ValueStr["Gender"] = "性别：女性"
     ValueStr["StartTime"] = (
         "请假开始时间：{0}-{1}-{2} {3}:{4}:{5}".format(

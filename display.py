@@ -19,7 +19,7 @@ def Display() -> Dict:
     InputValue["Name"] = input("Please enter your name:")
     InputValue["StudentID"] = input("Please enter your student ID:")
     InputValue["Class"] = input("Please enter your class ID:")
-    InputValue["Gender"] = input("Please enter your gender:(m/w)")
+    InputValue["Gender"] = input("Please enter your gender:(m/w)(男/女)")
 
     print("******************************")
     print("At what time are you going to take time off?(Please enter a serial number)")
