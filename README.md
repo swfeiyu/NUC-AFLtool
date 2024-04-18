@@ -12,9 +12,9 @@ pip install pillow
 ```
 git clone https://github.com/swfeiyu/NUC-AFLtool.git
 ```
-3. Execute the program.
+3. Modify the config file conf.ini. You can add multiple templates. You should write which template you use after "template=".
+4. Execute the program.
 ```
-cd NUC-AFLtool
 python main.py
 ```
 Answer questions as requested. You can see what you need in the output folder.
@@ -28,12 +28,14 @@ bash pack.sh
 Then you can see an executable file named AFLtool in this folder.You can
 use it in the terminal.
 #### Linux
+Modify the config file conf.ini. You can add multiple templates, you should write which template you use after "template=".Then run this
 ```
 ./AFLtool
 ```
 **Remember, if you wanna create exe on linux, use wine. Docker is a good idea. I use batonogov/pyinstaller-windows:latest**
 Command like`docker run -it -v VOLUME:/src batonogov/pyinstaller-windows:latest /bin/bash`
 #### Windows
+Modify the config file conf.ini. You can add multiple templates, you should write which template you use after "template=".Then run this
 ```
 run AFLtool.exe
 ```

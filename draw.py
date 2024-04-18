@@ -1,9 +1,9 @@
 """
 :file: draw.py
 :brief: To draw the strings in the base.jpg and get the photos
-:version: 1.1
+:version: 2.0
 :author: SWfeiyu
-:date: 2024.3.27
+:date: 2024.4.18
 """
 
 from typing import Dict
@@ -11,8 +11,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 """
 :name: Draw
-:brief: To draw the strings in the base.jpg and save the photos into the
-output folder
+:brief: To draw the strings in the base.jpg and save the photos into the output folder
 :param: ValueStr -> Dict ={
                               "Name",
                               "StudentID",
@@ -52,5 +51,4 @@ def Draw(ValueStr: Dict):
     imd.text((90, 1560), ValueStr["State"], font=ZhSFont, fill=(102, 102, 102))
 
     im.save("output/note.jpg")
-    print("Please view your application in the output folder.Thank you for using!")
 

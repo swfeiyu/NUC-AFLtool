@@ -1,15 +1,15 @@
 """
 :file: main.py
 :brief: To write the main logic of this tool
-:version: 1.1
+:version: 2.0
 :author: SWfeiyu
-:date: 2024.3.27
+:date: 2024.4.18
 """
 
-from display import *
+from getdata import *
 from strbuild import *
 from draw import *
 
 if __name__ == '__main__':
-    Draw(BuildStr(GetValue()))
+    Draw(BuildStr(GetData()))
 

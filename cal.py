@@ -1,9 +1,9 @@
 """
 :file: cal.py
 :brief: For calculating some values used by application
-:version: 1.1
+:version: 2.0
 :author: SWfeiyu
-:date: 2024.3.27
+:date: 2024.4.18
 """
 
 import random
@@ -26,7 +26,7 @@ def CalAcademicYear() -> int:
 :brief: According to current month to calculate the semester
 :return: Semester -> int
 """
-def CalsSemester() -> int:
+def CalSemester() -> int:
     if 2 <= time.localtime(time.time()).tm_mon <= 7:
         return 2
     else:

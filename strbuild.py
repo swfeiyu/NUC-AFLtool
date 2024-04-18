@@ -1,9 +1,9 @@
 """
 :file: strbuild.py
 :brief: To build the strings which need to draw
-:version: 1.1
+:version: 2.0
 :author: SWfeiyu
-:date: 2024.3.27
+:date: 2024.4.18
 """
 
 from typing import Dict
