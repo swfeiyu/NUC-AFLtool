@@ -28,7 +28,7 @@ from cal import *
 """
 def GetData() -> Dict:
     config = ConfigParser()
-    config.read("conf.ini")
+    config.read("conf.ini",encoding="utf-8")
     template = config.get("template", "template")
 
     flag=int(config.get(template, "flag"))
