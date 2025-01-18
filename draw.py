@@ -31,9 +31,9 @@ output folder
                           }
 """
 def Draw(ValueStr: Dict):
-    ZhLFont = ImageFont.truetype("font/regular.ttf", 50)
-    ZhSFont = ImageFont.truetype("font/regular.ttf", 40)
-    im = Image.open("img/base.jpg")
+    ZhLFont = ImageFont.truetype("./awesome_bot/plugins/NUC-AFLtool/font/regular.ttf", 50)
+    ZhSFont = ImageFont.truetype("./awesome_bot/plugins/NUC-AFLtool/font/regular.ttf", 40)
+    im = Image.open('./awesome_bot/plugins/NUC-AFLtool/img/base.jpg')
     imd = ImageDraw.Draw(im)
 
     imd.text((92, 789), ValueStr["Name"], font=ZhLFont, fill=(17, 17, 17))
@@ -51,6 +51,5 @@ def Draw(ValueStr: Dict):
     imd.text((90, 1500), ValueStr["ClosingTime"], font=ZhSFont, fill=(102, 102, 102))
     imd.text((90, 1560), ValueStr["State"], font=ZhSFont, fill=(102, 102, 102))
 
-    im.save("output/note.jpg")
-    print("Please view your application in the output folder.Thank you for using!")
+    im.save('./awesome_bot/plugins/NUC-AFLtool/output/note.jpg')
 
